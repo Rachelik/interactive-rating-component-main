@@ -1,0 +1,105 @@
+
+
+h1 {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 30px 0px 0px 0px;
+}
+
+p {
+    color: #7c8798;
+    font-size: 15px;
+}
+
+
+.main-container {
+    background-color: #121417;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: #3e52a3; }
+
+.star-icon {
+    background-color: #252d37;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.rating-container {
+    background-color: #16212c;
+    border-radius: 28px;
+    width: 360px;
+    margin: 20px;
+    padding: 30px;
+
+}
+
+.thanku-container {
+    background-color: #16212c;
+    border-radius: 28px;
+    width: 360px;
+    margin: 20px;
+    padding: 30px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rating-buttons {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rating-button {
+    background-color: #252d37;
+    border: none;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    color: #7c8798;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.submit-rating-button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 30px;
+    color:#fb7413;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    font-size: 15px;
+
+}
+
+.rating-text {
+    color:#fb7413;
+    font-weight: 400;
+    padding: 8px 20px 6px;
+    text-align: center;
+    margin: 0px;
+}
+
+.rating-desc {
+    background-color: #252d37;
+    border-radius: 16px;
+    width: fit-content;
+    height: 100%;
+}
+
+.thank-icon {
+    padding: 18px 0px 36px 0px;
+}
