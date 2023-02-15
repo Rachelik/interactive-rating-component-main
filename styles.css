@@ -127,12 +127,7 @@ p {
 
 .rating-button:hover {
     background-color: #959eac!important;
-    color: white;
-}
-
-.rating-button:active {
-    background-color: #fb7413;
-    color: white;
+    color: white!important;
 }
 
 .rating-button {

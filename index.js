@@ -1,13 +1,17 @@
+let x = "";
+
 function submit_rating_handler() {
-
-    document.getElementById('rating-container').style.display = 'none';
-    document.getElementById('thanku-container').style.display = 'flex';
-
-    // alert('button clicked');
+    if (x === "") {
+        alert('Please select a rating.');
+    }
+    else {
+        document.getElementById('rating-container').style.display = 'none';
+        document.getElementById('thanku-container').style.display = 'flex';
+    }
 }
 
 function rating_click() {
-    let x = event.target.innerHTML;
+    x = event.target.innerHTML;
     document.getElementById('rating-score').innerHTML = x;
 
     ratingBtns = document.getElementsByClassName("rating-button");
@@ -19,7 +23,7 @@ function rating_click() {
         }
         else {
             event.target.style.background = 'hsl(25, 97%, 53%)';
-            event.target.style.color = 'white';
+            event.target.style.color = '#FFFFFF';
         }
     }
 }
