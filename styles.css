@@ -145,6 +145,7 @@ p {
 .submit-rating-button {
     width: 346px;
     padding: 14px;
+    border: none;
     border-radius: 30px;
     background-color: #fb7413;
     color: white;
