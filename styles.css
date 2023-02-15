@@ -1,14 +1,74 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset end */
+
+
 
 
 h1 {
     color: #ffffff;
     font-size: 28px;
-    margin: 30px 0px 0px 0px;
+    margin: 30px 0px 14px 0px;
 }
 
 p {
     color: #7c8798;
     font-size: 15px;
+}
+
+.normal-text {
+    line-height: 1.6;
+}
+
+.rating-text {
+    line-height: 1;
 }
 
 
@@ -19,6 +79,9 @@ p {
     flex-direction: column;
     align-items: center;
     font-family: 'Overpass', sans-serif;
+    justify-content: center;
+
+
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -26,40 +89,50 @@ p {
 
 .star-icon {
     background-color: #252d37;
-    padding: 20px;
-    border-radius: 30px;
+    padding: 16px;
+    border-radius: 28px;
+    margin: 3px 0px;
 }
 
-.rating-container {
+#rating-container {
     background-color: #16212c;
+    background: radial-gradient(circle at top, #232A34 0%, #212832 12%, #202731 24%, #1F2630 36%, #1E252F 48%, #1C232D 80%, #181F29 100%);
     border-radius: 28px;
-    width: 360px;
+    width: 352px;
     margin: 20px;
     padding: 30px;
-
-}
-
-.thanku-container {
-    background-color: #16212c;
-    border-radius: 28px;
-    width: 360px;
-    margin: 20px;
-    padding: 30px;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center; */
+    justify-items: left;
+}
+
+#thanku-container {
+    background-color: #16212c;
+    background: radial-gradient(circle at top, #232A34 0%, #212832 12%, #202731 24%, #1F2630 36%, #1E252F 48%, #1C232D 80%, #181F29 100%);
+    border-radius: 28px;
+    width: 360px;
+    margin: 20px;
+    padding: 28px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    display: none;
 }
 
 .rating-buttons {
-    margin: 30px auto;
+    width: 342px;
+    margin: 28px 0px 26px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+
+.rating-button:hover {
+    background-color: #959eac!important;
+    color: white;
+    
 }
 
 .rating-button {
@@ -71,26 +144,34 @@ p {
     color: #7c8798;
     font-size: 16px;
     font-weight: 700;
+    cursor: pointer;
 }
 
+
+
 .submit-rating-button {
-    width: 100%;
+    width: 346px;
     padding: 14px;
     border-radius: 30px;
-    color:#fb7413;
+    background-color: #fb7413;
+    color: white;
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 2.5px;
+    letter-spacing: 2.2px;
     font-size: 15px;
+    margin: 5px 0px 0px;
+}
 
+.submit-rating-button:hover {
+    background-color: white;
+    color: #fb7413;
 }
 
 .rating-text {
     color:#fb7413;
     font-weight: 400;
-    padding: 8px 20px 6px;
+    padding: 10px 20px 8px;
     text-align: center;
-    margin: 0px;
 }
 
 .rating-desc {
@@ -98,8 +179,10 @@ p {
     border-radius: 16px;
     width: fit-content;
     height: 100%;
+    margin: 0px 0px 8px;
+
 }
 
 .thank-icon {
-    padding: 18px 0px 36px 0px;
+    padding: 18px 0px 31px 0px;
 }
