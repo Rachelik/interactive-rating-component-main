@@ -1,7 +1,7 @@
 let x = "";
 
 function submit_rating_handler() {
-    if (x === "") {
+    if (x == "") {
         alert('Please select a rating.');
     }
     else {
