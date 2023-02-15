@@ -130,6 +130,11 @@ p {
     color: white;
 }
 
+.rating-button:active {
+    background-color: #fb7413;
+    color: white;
+}
+
 .rating-button {
     background-color: #252d37;
     border: none;
