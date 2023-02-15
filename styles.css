@@ -146,6 +146,7 @@ p {
     width: 346px;
     padding: 14px;
     border: none;
+    border-width: 0;
     border-radius: 30px;
     background-color: #fb7413;
     color: white;
